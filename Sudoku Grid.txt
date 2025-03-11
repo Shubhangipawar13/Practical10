@@ -1,0 +1,20 @@
+void Grid(int size) {
+        int boxWidth = String.valueOf(size).length() + 2;
+        String firstLine = "-".repeat(boxWidth);
+
+        for (int vl = 0; vl < size; vl++) {
+            for (int hl = 0; hl < size; hl++) {
+                System.out.print(" " + firstLine);
+            }
+            System.out.println(" "); 
+            for (int hl = 0; hl < size; hl++) {
+                System.out.printf("|%" + boxWidth + "s", " ");
+            }
+            System.out.println("|"); 
+        }
+        for (int hl = 0; hl < size; hl++) {
+            System.out.print(" " + firstLine);
+        }
+        System.out.println(" "); 
+    }
+    
